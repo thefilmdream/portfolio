@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>404 — 頁面不在這裡 / Page not found</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="css/fonts.css" />
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  .nf {
+    min-height: 100svh; background: var(--olive); color: #2B2313;
+    display: flex; flex-direction: column; justify-content: center;
+    padding: clamp(40px, 8vw, 120px) var(--gut);
+    position: relative; overflow: hidden;
+  }
+  .nf__num {
+    font-family: var(--serif); font-variation-settings: 'opsz' 14; font-weight: 500;
+    font-size: clamp(120px, 26vw, 380px); line-height: .8; margin: 0; letter-spacing: -.03em;
+  }
+  .nf__cn { font-family: var(--cn); font-size: clamp(14px, 1.4vw, 20px); letter-spacing: .2em; margin: 18px 0 0; color: var(--bone); }
+  .nf__en { font-family: var(--text); font-style: italic; font-size: clamp(13px, 1.2vw, 17px); opacity: .7; margin: 10px 0 0; }
+  .nf__back {
+    display: inline-flex; align-items: center; gap: 12px; margin-top: clamp(28px, 4vw, 48px);
+    font-family: var(--cn); font-size: 13px; letter-spacing: .12em;
+    border-bottom: 1px solid currentColor; padding-bottom: 6px; align-self: flex-start;
+    transition: color .4s, gap .4s var(--ease);
+  }
+  .nf__back:hover { color: var(--orange); gap: 20px; }
+  .nf__script { position: absolute; right: 6vw; top: 12%; font-family: var(--script); color: var(--orange);
+                font-size: clamp(70px, 12vw, 190px); transform: rotate(-6deg); opacity: .9; }
+</style>
+</head>
+<body>
+  <main class="nf">
+    <span class="nf__script" aria-hidden="true">oops</span>
+    <p class="nf__num">404</p>
+    <p class="nf__cn">這一頁還沒被設計出來</p>
+    <p class="nf__en">This page has not been designed yet.</p>
+    <a class="nf__back" href="./">← 回到作品集 / Back to portfolio</a>
+  </main>
+</body>
+</html>
